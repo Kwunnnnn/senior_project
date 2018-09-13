@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <!-- import bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="js/angular.min.js"></script>
+    <link rel="stylesheet" href="css/setting.css">
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-app = "myApp" ng-controller="RegController" >
+<form>
+    <!--form register-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-7" style="margin-top: 15%">
+
+                <h1 style="font-size: 60px;text-align: center;margin-top: 10%">ลงทะเบียน</h1>
+                <div class="form-group">
+                    <label style="font-size: 25px" class="col-form-label" for="userID_text">Username</label>
+                    <input  style="font-size: 25px" type="text" ng-model="stdID" class="form-control" id="userID_text" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label style="font-size: 25px" class="col-form-label" for="userID_text">Password</label>
+                    <input  style="font-size: 25px" type="password" ng-model="stdID" class="form-control" id="userID_text" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label style="font-size: 25px" class="col-form-label" for="firstname_text">First name</label>
+                    <input style="font-size: 25px" type="text" ng-model="stdFirstName" class="form-control" id="firstname_text" placeholder="First name">
+                </div>
+                <div class="form-group">
+                    <label style="font-size: 25px" class="col-form-label" for="lastname_text">Last name</label>
+                    <input style="font-size: 25px" type="text" ng-model="stdLastName" class="form-control" id="lastname_text" placeholder="Last name">
+                </div>
+                <button ng-click="sendREG()" type="button" class="btn btn-primary btn-sm" style="margin-top: 5%;font-size: 25px">ยืนยัน</button>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
